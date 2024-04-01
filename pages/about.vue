@@ -1,14 +1,11 @@
 <template>
   <div>
-    <h1>
-      About
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam facilis molestiae? Non, sapiente?
-      Deserunt sed eligendi, repellat, aliquid amet?
-    </p>
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore voluptatem
+      dicta, obcaecati possimus illum vel adipisci harum earum iure.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore voluptatem
+      dicta, obcaecati possimus illum vel adipisci harum earum iure.</p>
     <div>{{ data }}</div>
-    <div>{{ postData }}</div>
   </div>
 </template>
 
@@ -18,5 +15,14 @@ const {data} = await useFetch('/api/test?name=mario', {
   body: {age: 40}
 })
 </script>
+<style scoped>
+h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
 
-<style scoped></style>
+p {
+  margin: 20px;
+}
+
+</style>
