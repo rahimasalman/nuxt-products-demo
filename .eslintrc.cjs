@@ -1,11 +1,12 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "commonjs": true,
+        "es2021": true,
+        "node": true
     },
     "extends": [
-        "standard-with-typescript",
-        "plugin:vue/vue3-essential"
+        'plugin:nuxt/recommended'
     ],
     "overrides": [
         {
@@ -21,14 +22,28 @@ module.exports = {
         }
     ],
     "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "ecmaVersion": "latest"
     },
     "plugins": [
-        "vue"
+        "nuxt"
     ],
     "rules": {
-        'quotes': ['error', 'double', { avoidEscape: true }],
-        'max-len': ['error', { code: 100 }]
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        'vue/multi-word-component-names': 'off',
     }
-}
+};

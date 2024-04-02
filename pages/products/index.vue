@@ -11,18 +11,18 @@
 <script setup>
 
 definePageMeta({
-  layout: 'products'
-})
+	layout: "products"
+});
 
 // fetch the products
-const {data: products} = await useFetch('https://fakestoreapi.com/products')
+const {data: products} = await useFetch("https://fakestoreapi.com/products");
 
 useHead({
-  title: 'Nuxt Products | All',
-  meta: [
-    {name: 'description', content: 'Nuxt Products Demo Page Detailed View'}
-  ]
-})
+	title: "Nuxt Products | All",
+	meta: [
+		{name: "description", content: "Nuxt Products Demo Page Detailed View"}
+	]
+});
 </script>
 
 <style scoped></style>

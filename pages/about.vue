@@ -10,10 +10,7 @@
 </template>
 
 <script setup>
-const {data} = await useFetch('/api/test?name=mario', {
-  method: 'post',
-  body: {age: 40}
-})
+const {data} = await useFetch("/api/currency/USD");
 </script>
 <style scoped>
 h2 {
